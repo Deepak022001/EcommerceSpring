@@ -1,4 +1,4 @@
-package org.example.EcommerceSpring.config;
+package org.example.EcommerceSpring.configuration;
 
 import org.example.EcommerceSpring.Gateway.api.FakeStoreCategoryApi;
 import org.springframework.context.annotation.Bean;
