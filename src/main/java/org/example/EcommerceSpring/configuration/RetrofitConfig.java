@@ -19,4 +19,7 @@ public class RetrofitConfig {
     public FakeStoreCategoryApi fakeStoreCategoryApi(Retrofit retrofit){
         return retrofit.create(FakeStoreCategoryApi.class);
     }
+    public FakeStoreCategoryApi fakeStoreCategoryApi(Retrofit retrofit){
+        return retrofit.create(FakeStoreCategoryApi.class);
+    }
 }
