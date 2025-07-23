@@ -11,7 +11,7 @@ public class FakeStoreProductService implements IProductService {
 
     private final IProductGateway productGateway;
 
-    public FakeStoreProductService(IProductGateway productGateway) {
+    public FakeStoreProductService(  IProductGateway productGateway) {
         this.productGateway = productGateway;
     }
 
