@@ -14,24 +14,24 @@ public class ProductMapper {
                 .discount(product.getDiscount())
                 .model(product.getModel())
                 .title(product.getTitle())
-                .Category(product.getCategory())
+//                .Category(product.getCategory().getId())
                 .brand(product.getBrand())
                 .popular(product.isPopular())
                 .build();
     }
     public static Product toEntity(ProductDTO dto) {
-        return Product.builder()
-                .id(dto.getId())
-                .image(dto.getImage())
-                .color(dto.getColor())
-                .price(dto.getPrice())
-                .description(dto.getDescription())
-                .discount(dto.getDiscount())
-                .model(dto.getModel())
-                .title(dto.getTitle())
-                .Category(dto.getCategory())
-                .brand(dto.getBrand())
-                .popular(dto.isPopular())
+        Product.ProductBuilder builder = Product.builder();
+        builder.id(dto.getId());
+        builder.image(dto.getImage());
+        builder.color(dto.getColor());
+        builder.price(dto.getPrice());
+        builder.description(dto.getDescription());
+        builder.discount(dto.getDiscount());
+        builder.model(dto.getModel());
+        builder.title(dto.getTitle());
+        builder.brand(dto.getBrand());
+        builder.popular(dto.isPopular());
+        return builder
                 .build();
     }
 }
